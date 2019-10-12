@@ -2,8 +2,8 @@
 <odoo>
     <template id="assets_backend" name="custom bar assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
-            <link rel="stylesheet" href="/mail_reply/static/src/css/mail_message_reply.css"/>
-            <script type="text/javascript" src="/mail_reply/static/src/js/mail_message_reply.js"/>
+            <link rel="stylesheet" href="/mail_reply_on_message/static/src/css/mail_message_reply.css"/>
+            <script type="text/javascript" src="/mail_reply_on_message/static/src/js/mail_message_reply.js"/>
         </xpath>
     </template>
 </odoo>

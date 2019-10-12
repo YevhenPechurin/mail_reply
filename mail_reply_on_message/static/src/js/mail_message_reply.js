@@ -1,4 +1,4 @@
-odoo.define('mail_reply.button', function (require) {
+odoo.define('mail_reply_on_message.button', function (require) {
     "use strict";
 
     var ThreadWidget = require('mail.widget.Thread');
