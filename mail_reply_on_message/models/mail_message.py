@@ -9,8 +9,8 @@ class MailMessage(models.Model):
         self.ensure_one()
 
         body = (_(
-            "<div font-style=normal;><br/></div><blockquote>----- Original message ----- <br/> Date: %s <br/> From: %s <br/> Subject: %s <br/><br/>%s</blockquote>") %
-                (str(self.date), self.author_id.name, self.subject, self.body))
+            "<br/><blockquote style='border-left-width:thin;border-left-style:solid;border-left-color:rgb(204, 204, 204);padding-left:1ex;'><div>On %s at %s, %s wrote:</div>%s</blockquote>") %
+                (self.date.strftime("%d %b %Y"), self.date.strftime("%H:%M"), self.author_id.name, self.body))
 
         ctx = {
             'default_res_id': self.res_id,
